@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: white;
     padding: 0;
-    margin: 0;
+    margin-top: 30px;
 }
 h3 {
     text-align: center;
@@ -13,27 +13,54 @@ h3 {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin: auto;
+    text-align: left;
+}
+.table_caption {
+    font-size: 30px;
+    font-weight: 900;
+    color: aquamarine;
 }
 td, th {
     border: 1px solid white;
     margin: 3px;
     padding: 3px;
 }
+thead tr {
+    background-color: brown;
+}
+tr:nth-child(even) {
+    background-color: brown;
+}
+
 @media (max-width: 768px) {
+    div {
+        width: 100%;
+        margin: auto;
+
+    }
     table {
         font-size: 18px;
         margin: 10px;
+        overflow-x: auto;
+        width: 100%;    
 
     }
+    
     th, td {
         padding: 10px;
         display: block;
+        
 
     }
     th {
         text-align: center;
     }
     .digit:hover {
+        background-color: rgb(139, 58, 92);
+    }
+    tr:nth-child(even) {
         background-color: brown;
     }
+    
 }
